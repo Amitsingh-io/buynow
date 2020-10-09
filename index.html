@@ -32,7 +32,7 @@
         {
          width:75%;
         height:400px;
-         background-color:red;
+        /* background-color:red;*/
          margin-left:13%;
         }
         .book-details
@@ -189,7 +189,7 @@
         a
         {
           text-decoration:none;
-          text-align:center;
+          /*text-align:center;*/
         }
         a:hover
         {
@@ -236,7 +236,7 @@
    left: 0;
    bottom: 0;
    width: 100%;
-   
+   z-index: 2;
    color: white;
    text-align: center;
    display:inline-block;
@@ -246,8 +246,8 @@
 {
   width: 50%;
   height: 100%;
-  background-color:white;
-  color: rgb(0, 0, 0);
+  background-color: rgb(105, 54, 52);
+  color: white;
   float: left;
 }
 .buynow
@@ -262,6 +262,7 @@
 .footer 
        {
          display: none;
+         
        }
     .action
     {display:flex  ;
@@ -285,6 +286,29 @@
       color: white;
      
     }
+    .smbook/* similar books image*/
+    {
+      width:85%;
+      margin-left: 20px;
+      height: 230px;
+      background-color: red;
+      margin-bottom: 20px;
+    }
+    .smimg
+    {
+      width: 100%;
+      height: 100%;
+    }
+    .productgroup
+    {
+      margin-left: 40px;
+      
+    }
+    .thd
+    {
+      margin-left: 70px; display: block;
+      color: gray;
+    }
   </style>
 </head>
 
@@ -300,7 +324,7 @@
           <div class="row book">
             <!-- book image section -->
             <div class="bookimg " id="bookimg">
-              <img src="14283.jpg" style="width:100%; height:100%;" alt="book Image">
+              <img src="imge/14283.jpg" style="width:100%; height:100%;"alt="book Image">
             </div>
             <!--book details section-->
             <div class="book-details ">
@@ -321,7 +345,7 @@
               <p>
                 <input type="text" class="pincode" style="" placeholder="Enter Pincode">
 
-                <a href="#" class="check" id="check" style=" "> Check</a>
+                <a href="#" class="check" id="check" style="text-align:center; "> Check</a>
               </p>
               <p style="display:block; margin-top:-30px;">
               Generally delivered in 5-10 days
@@ -371,9 +395,127 @@
         <div class="buynow" id="buynow" value="">
          <p style="margin-top:5px;">BUY NOW</p>
         </div>
-        </div>
-
+      </div>
+      
       </div><!--end of container-->
+     <hr>
+     <P><h4 style="margin-left: 20px;"> Related Books</h4></P><hr>
+      <div class="container-flex">
+        
+        <div class="row" >
+          <div class="col-xl-2 col-lg-2 col-md-4 col-sm-4 col-6" >
+            <div class="smbook">
+              <img src="#" alt="image" class="smimg">
+            </div>
+          </div>
+            <div class="col-xl-2 col-lg-2 col-md-4 col-sm-4 col-6">
+              <div class="smbook">               
+                 <img src="#" alt="image" class="smimg">
+              </div>
+              </div>
+              <div class="col-xl-2 col-lg-2 col-md-4 col-sm-4 col-6">
+                <div class="smbook">
+                  <img src="#" alt="image" class="smimg">
+                </div>
+                </div>
+
+                <div class="col-xl-2 col-lg-2 col-md-4 col-sm-4 col-6">
+                  <div class="smbook">
+                    <img src="#" alt="image" class="smimg">
+                  </div>
+                  </div>
+
+                  <div class="col-xl-2 col-lg-2 col-md-4 col-sm-4 col-6">
+                    <div class="smbook">
+                      <img src="#" alt="image" class="smimg">
+                    </div>
+                    </div>
+
+                    <div class="col-xl-2 col-lg-2 col-md-4 col-sm-4 col-6">
+                      <div class="smbook">
+                        <img src="#" alt="image" class="smimg">
+                      </div>
+                      
+                      </div>
+
+          </div>
+        </div><!--end of similar books image container-->
+        
+        <br><hr>
+        <h5 style="margin-left: 20px;">Product Detail</h5>
+          
+<div class="container">
+  <div class="row">
+     <table style="margin-left:30px;">
+          <thead>
+           <tr>
+              <th class="th">Publisher</th>
+              <th class="thd">Oxford University Press</th>
+           </tr>
+        </thead>
+
+        <thead>
+           <tr>
+              <th class="th">ISBN</th>
+              <th class="thd">0190122099</th>
+           </tr>
+        </thead>
+
+         <thead>
+           <tr>
+              <th class="th">ISBN 13</th>
+              <th class="thd">9780190122096</th>
+           </tr>
+        </thead>
+
+        <thead>
+           <tr>
+              <th class="th">Edition</th>
+              <th class="thd">2019</th>
+           </tr>
+        </thead>
+
+         <thead>
+           <tr>
+              <th class="th">Publication Year</th>
+              <th class="thd">2019</th>
+           </tr>
+        </thead>
+        <thead>
+          <tr>
+             <th class="th">Publication Month</th>
+             <th class="thd">January</th>
+          </tr>
+       </thead>
+
+         <thead>
+           <tr>
+              <th class="th">Language</th>
+              <th class="thd">English</th>
+           </tr>
+        </thead>
+
+        <thead>
+           <tr>
+              <th class="th">Binding</th>
+              <th class="thd">Paper Back</th>
+           </tr>
+        </thead>
+        
+        <thead>
+           <tr>
+              <th class="th">Author</th>
+              <th class="thd" >Sangeeta Sinha </th>
+           </tr>
+        </thead>
+       </table>
+          
+  </div>
+  </div>
+  <br>
+   <br><br><br>
+  
+      
           <script src="https://code.jquery.com/jquery-3.1.1.min.js" ></script>
           <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
           <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
